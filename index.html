@@ -1,93 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>errorspace</title>
-
-  <!-- Inter Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #000;
+      --text: #fff;
+      --accent: #00bcd4;
+      --muted: #999;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: #000000;
-      margin: 2rem;
-      color: #ffffff;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: #ffffff;
-      text-decoration: underline;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    a:hover {
-      color: #999999;
+      background: var(--bg);
+      color: var(--text);
+      margin: 4rem;
+      line-height: 1.7;
+      font-size: 1.15rem;
     }
 
     h1 {
-      color: #00bcd4;
-      margin-top: 3rem;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+      color: var(--text);
     }
 
     p {
-      max-width: 600px;
-      margin-bottom: 1.5rem;
+      max-width: 720px;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+      line-height: 1.6;
+    }
+
+    li {
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid var(--muted);
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--muted);
+      border-color: var(--text);
+    }
+
+    .footer {
+      margin-top: 5rem;
+      font-size: 1rem;
+      color: var(--muted);
     }
   </style>
 </head>
-
 <body>
 
+  <h1>errorspace</h1>
+
+  <p><em>e.r.r.o.r.</em> emerged from Tim Petter’s bachelor’s project at HAW Hamburg. By treating code as an interface between human and machine, the project explores generative design as a dynamic, user-driven process — prioritizing openness, adaptability, and creative autonomy.</p>
+
+  <p>The website brings these tools together, making them freely accessible and open to use. <strong>errorspace</strong> encourages participation and offers tools for continued development, including SVG export for program-independent reuse.</p>
+
+  <h2>Tools</h2>
   <ul>
-    <li>
-      <a href="https://emotionssvg.netlify.app/" target="_blank">Emotion Grid</a> – Visualization of emotions through animated points, using color, motion, and interaction to represent different emotional states.
-    </li>
-    <li>
-      <a href="https://voronoitool.netlify.app/" target="_blank">Voronoi Sketch</a> – A dynamic variation of a Voronoi diagram. User input continuously reshapes the structure, transforming clicks into evolving geometric patterns.
-    </li>
-    <li>
-      <a href="https://globussvg.netlify.app/" target="_blank">Globe Dot Grid</a> – A globe visual made of scalable dots, with adjustable latitude, longitude, and brush size.
-    </li>
-    <li>
-      <a href="https://pulsesvg.netlify.app/" target="_blank">Pulse Grid</a> – Visualization of heartbeat in six different modes: Sleep, Meditation, Focus, Calm, Sports, and Stress.
-    </li>
-    <li>
-      <a href="https://stargridsvg.netlify.app/" target="_blank">Star Grid</a> – A scalable point grid arranged in space. As a counterpart to the globe.
-    </li>
-    <li>
-      <a href="https://app.netlify.com/sites/callygraphic/" target="_blank">Calligraphic Lines</a> – Slow movements create thin strokes, while fast gestures generate bold lines. A digital drawing tool that transforms motion into expressive form.
-    </li>
-    <li>
-      <a href="https://wurmy.netlify.app/" target="_blank">Calligraphic Snake</a> – Next generation: this version introduces distinct point animations. Movement becomes visual rhythm—each gesture creates bold, animated lines shaped by speed and direction.
-    </li>
-    <li>
-      <a href="https://app.netlify.com/sites/sundialsvg/" target="_blank">Sundial SVG</a> – A playful take on the classic sundial. A digital shadow points the hour, visualizing time through light, angle, and motion.
-    </li>
-    <li>
-      <a href="https://fadetool.netlify.app/" target="_blank">Fade</a> – An illustrative tool that translates user input into gradients made of dots, lines, and squares, turning gestures into layered visual compositions.
-    </li>
-    <li>
-      <a href="https://64bitgrid.netlify.app/" target="_blank">64Bit Grid</a> – The canvas is divided into 64-bit, 32-bit, 16-bit, and 8-bit quadrants, showing how bit-depth impacts color and detail.
-    </li>
+    <li><strong><a href="https://emotionssvg.netlify.app/" target="_blank">Emotion Grid</a></strong> – Animated points visualize emotional states through color, motion, and interaction.</li>
+    <li><strong><a href="https://voronoitool.netlify.app/" target="_blank">Voronoi Sketch</a></strong> – A reactive Voronoi diagram shaped by user input and gesture.</li>
+    <li><strong><a href="https://globussvg.netlify.app/" target="_blank">Globe Dot Grid</a></strong> – A digital globe built from points, adjustable in structure and scale.</li>
+    <li><strong><a href="https://pulsesvg.netlify.app/" target="_blank">Pulse Grid</a></strong> – Heartbeat visualized in six modes: Sleep, Focus, Calm, and more.</li>
+    <li><strong><a href="https://stargridsvg.netlify.app/" target="_blank">Star Grid</a></strong> – A structured point field in space, contrasting the spherical globe.</li>
+    <li><strong><a href="https://app.netlify.com/sites/callygraphic/" target="_blank">Calligraphic Lines</a></strong> – Slow movements draw delicate strokes, fast gestures bold lines.</li>
+    <li><strong><a href="https://wurmy.netlify.app/" target="_blank">Calligraphic Snake</a></strong> – Animated lines respond to speed and direction with rhythmic motion.</li>
+    <li><strong><a href="https://app.netlify.com/sites/sundialsvg/" target="_blank">Sundial SVG</a></strong> – A digital shadowclock reflecting time through light and angle.</li>
+    <li><strong><a href="https://fadetool.netlify.app/" target="_blank">Fade</a></strong> – Translates gestures into layered gradients of dots, lines, and shapes.</li>
+    <li><strong><a href="https://64bitgrid.netlify.app/" target="_blank">64Bit Grid</a></strong> – Bit-depth quadrants reveal how data resolution affects form and color.</li>
   </ul>
 
-  <h1>About</h1>
-  <p>
-    </em>e.r.r.o.r. emerged as part of Tim Petter’s bachelor’s project at HAW Hamburg. The work explores interactive and generative design, using code as a tool for artistic exploration. Through visual systems and user-driven interactions, it pushes the boundaries of traditional graphic design. Scalability, transformation, and real-time responsiveness are central principles, allowing the work to continuously evolve through user input.
-
-The website serves as a collection point for these works, making the project accessible and open for free use. errorspace invites users to participate and shape the experience. It offers continuous creative evolution through SVG export options, enabling program-independent further development.
-  </p>
+  <div class="footer">
+    Special thanks to Prof. Pierre Pané-Farré and Simon Thiefes for your support and feedback.<br />
+    &copy; Tim Petter, 2025
+  </div>
 
 </body>
 </html>
